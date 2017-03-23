@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
 	private Timer moveTimer;
 	private Timer gameTimer;
 
+
 	//Køre spillet?
 	private boolean running = false;
 
@@ -138,18 +139,17 @@ public class MainActivity extends Activity {
 
 		//Sørger for, at hvis brugeren stopper appen, så håndters dette, sådan der holdes pause for spillet.
 		super.onStop();
-		running = !running;
+		running = false;
 		invalidateOptionsMenu(); //Gentegner menuen, da nederste punkt er ændret
 	}
 
 
 	@Override
-	protected void onResume() {
+	protected void onRestart() {
 		//Sørger for, at hvis brugeren genåbner appen, så håndters dette, sådan spillet fortsættes.
-
-		running = !running;
+		running = true;
 		invalidateOptionsMenu(); //Gentegner menuen, da nederste punkt er ændret
-		super.onResume();
+		super.onRestart();
 	}
 
 	//*
@@ -301,6 +301,8 @@ public class MainActivity extends Activity {
 		if(id == R.id.newgame) {
 			myView.newGame(); //Starter nyt spil
 			updatePointBoard(); //Opdater game board, hvilket visningen af spillets status.
+			running = true;
+			invalidateOptionsMenu();
 		}
 		else if(id == R.id.shareScore) {
 			//Deling af highscore og point

@@ -481,6 +481,8 @@ public class MyView extends View{
         gameOver = false;
         activity.resetGameTimer(90-(level*10));
         activity.resetMoveTimer();
+
+
         reDraw();
     }
 
