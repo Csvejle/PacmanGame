@@ -2,25 +2,22 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\makn\AndroidStudioProjects\course2016\CanvasDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\makn\AndroidStudioProjects\course2016\CanvasDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-21.0.3_a8bd4df0864760fbfdd6760ad143feab0c49ea07.jar" />
+        is-multidex="true"
+        jar="C:\Users\cecil\Desktop\Webudvikling\Semester_2\Android\Apps\CanvasDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a980e736979f60835070e9daaa4b247bdaf16fd">
+        <dex dex="C:\Users\cecil\Desktop\Webudvikling\Semester_2\Android\Apps\CanvasDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c82ec8e069665284ab8ce25ff8c941325a152c85\classes.dex" />
     </item>
     <item
-        jar="C:\Users\makn\AndroidStudioProjects\course2016\CanvasDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\makn\AndroidStudioProjects\course2016\CanvasDemo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3_ce84e93074138e891b54c60e0d84d68eea9f8a96.jar" />
-    </item>
-    <item
-        jar="C:\Users\makn\android-sdks\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\makn\AndroidStudioProjects\course2016\CanvasDemo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3_85a0919a9258501ff68494a7b220aee942b01292.jar" />
+        is-multidex="true"
+        jar="C:\Users\cecil\Desktop\Webudvikling\Semester_2\Android\Apps\CanvasDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\cecil\Desktop\Webudvikling\Semester_2\Android\Apps\CanvasDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b8f7b0404a9db3c580914a440092bbacfcaade5d\classes.dex" />
     </item>
 
 </items>
