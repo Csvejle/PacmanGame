@@ -246,7 +246,7 @@ public class MyView extends View{
             int speed = 8;
 
             //Hastigheds tilpassning ift. level
-            speed += enemy.getLevel().ordinal();
+            speed += enemy.getLevel().ordinal()*2;
 
 
             //Beregner om fjende skal skifte retning
