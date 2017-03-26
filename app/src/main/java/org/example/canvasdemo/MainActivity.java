@@ -27,8 +27,8 @@ public class MainActivity extends Activity {
 	private boolean running = false;
 
 	//Tids counter
-	public final int defaultTime = 90;
-	private int counter = defaultTime;
+	public final int defaultTime = 90; //Default tid
+	private int counter = defaultTime; //Tidscounter der bruges
 
 
 	@Override
