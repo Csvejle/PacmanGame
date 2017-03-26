@@ -2742,10 +2742,10 @@ containing a value of this type.
         public static final int media_actions=0x7f0d008c;
         public static final int middle=0x7f0d0039;
         public static final int mini=0x7f0d0037;
-        public static final int moveDown=0x7f0d0076;
-        public static final int moveLeft=0x7f0d0074;
-        public static final int moveRight=0x7f0d0077;
-        public static final int moveUp=0x7f0d0075;
+        public static final int moveDown=0x7f0d0077;
+        public static final int moveLeft=0x7f0d0075;
+        public static final int moveRight=0x7f0d0078;
+        public static final int moveUp=0x7f0d0076;
         public static final int multiply=0x7f0d001f;
         public static final int navigation_header_container=0x7f0d0080;
         public static final int never=0x7f0d003d;
@@ -2758,7 +2758,7 @@ containing a value of this type.
         public static final int parallax=0x7f0d0030;
         public static final int parentPanel=0x7f0d004d;
         public static final int pin=0x7f0d0031;
-        public static final int points=0x7f0d0078;
+        public static final int points=0x7f0d0074;
         public static final int progress_circular=0x7f0d0006;
         public static final int progress_horizontal=0x7f0d0007;
         public static final int radio=0x7f0d005d;

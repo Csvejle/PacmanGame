@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     android:id="@+id/layout"
     tools:context="org.example.canvasdemo.MainActivity" >
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,10 +47,6 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/points"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <!-- Notice how the custom view is referenced here with
     a full package path-->
