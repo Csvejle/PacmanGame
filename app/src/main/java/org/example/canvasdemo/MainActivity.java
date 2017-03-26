@@ -27,7 +27,8 @@ public class MainActivity extends Activity {
 	private boolean running = false;
 
 	//Tids counter
-	private int counter = 90;
+	public final int defaultTime = 90;
+	private int counter = defaultTime;
 
 
 	@Override
@@ -116,7 +117,7 @@ public class MainActivity extends Activity {
 				TimerMethod();
 			}
 
-		}, 0, 150); //0 indicates we start now, 200
+		}, 0, 50); //0 indicates we start now, 120
 		//is the number of miliseconds between each call
 
 
@@ -187,10 +188,11 @@ public class MainActivity extends Activity {
 			// so we can draw
 			if (running)
 			{
+				int minTime = 25;
 				//Beregner hastighed på pacman, hvilket er baseret på level
-				int speed = myView.getLevel()*7;
-				if(speed > 60) {
-					speed = 60;
+				int speed = minTime - myView.getLevel()*3;
+				if(speed < 15) {
+					speed = 15;
 				}
 				myView.move(speed); //Bevæger pacman og fjender.
 			}
@@ -221,6 +223,10 @@ public class MainActivity extends Activity {
 			}
 		}, 0, 1000);
 
+		if(time <= 30) {
+			time = 30;
+		}
+
 		counter = time;
 	}
 
@@ -234,7 +240,7 @@ public class MainActivity extends Activity {
 				TimerMethod();
 			}
 
-		}, 0, 200);
+		}, 0, 75);
 
 		running = true;
 	}

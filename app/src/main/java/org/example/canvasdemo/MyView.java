@@ -94,7 +94,7 @@ public class MyView extends View{
         {
             addCoins(); //Tilføjer 10 nye mønter, da alle er taget.
             level += 1; //Går til næste level
-            activity.resetGameTimer(90-(level*10)); //Resætter spille timer
+            activity.resetGameTimer(activity.defaultTime-(level*10)+10); //Resætter spille timer
         }
 
 
@@ -114,7 +114,7 @@ public class MyView extends View{
 				}
 
 				//Tegner mønt
-				canvas.drawCircle(coin.getX(), coin.getY(), 10,paint);
+				canvas.drawCircle(coin.getX(), coin.getY(), 10, paint);
 			}
 		}
 
@@ -159,11 +159,11 @@ public class MyView extends View{
 
             //Tjekker fjender er på skærmen, og laver ny position, hvis ikke er.
             //Hvilket er muligt, ved ændring at skærm orientation
-            if(enemy.getXPos() <= 0 || enemy.getXPos() > w-gostBitmap.getWidth()){
+            if(enemy.getXPos() < 0 || enemy.getXPos() > w-gostBitmap.getWidth()){
                 enemy.setXPos(randomInt(w-gostBitmap.getWidth()));
             }
 
-            if(enemy.getYPos() <= 0 || enemy.getYPos() > h-gostBitmap.getHeight()){
+            if(enemy.getYPos() < 0 || enemy.getYPos() > h-gostBitmap.getHeight()){
                 enemy.setYPos(randomInt(h-gostBitmap.getHeight()));
             }
 
@@ -479,7 +479,7 @@ public class MyView extends View{
         points = 0;
         level = 1;
         gameOver = false;
-        activity.resetGameTimer(90-(level*10));
+        activity.resetGameTimer(activity.defaultTime);
         activity.resetMoveTimer();
 
 
