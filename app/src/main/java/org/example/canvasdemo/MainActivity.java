@@ -117,7 +117,7 @@ public class MainActivity extends Activity {
 				TimerMethod();
 			}
 
-		}, 0, 75); //0 indicates we start now, 75
+		}, 0, 120); //0 indicates we start now, 120
 		//is the number of miliseconds between each call
 
 
@@ -191,8 +191,8 @@ public class MainActivity extends Activity {
 				int minTime = 25;
 				//Beregner hastighed på pacman, hvilket er baseret på level
 				int speed = minTime - myView.getLevel()*3;
-				if(speed < 15) {
-					speed = 15;
+				if(speed < 5) {
+					speed = minTime;
 				}
 				myView.move(speed); //Bevæger pacman og fjender.
 			}
@@ -240,7 +240,7 @@ public class MainActivity extends Activity {
 				TimerMethod();
 			}
 
-		}, 0, 75);
+		}, 0, 120);
 
 		running = true;
 	}
