@@ -117,7 +117,7 @@ public class MainActivity extends Activity {
 				TimerMethod();
 			}
 
-		}, 0, 50); //0 indicates we start now, 120
+		}, 0, 75); //0 indicates we start now, 75
 		//is the number of miliseconds between each call
 
 
